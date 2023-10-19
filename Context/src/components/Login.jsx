@@ -2,13 +2,14 @@ import React, { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { UserContex } from '../context/UserContext'
 import axios from 'axios'
+import "../styles/login.css"
 
 const Login = () => {
 
 
-    const url = 'http://localhost:5003/api/v1/auth/login'
-    const url2 = 'http://localhost:5003/api/v1/users/me'
-    const url3 = 'http://localhost:5003/api/v1/admin/yo'
+    const url = 'http://localhost:4003/api/v1/auth/login'
+    const url2 = 'http://localhost:4003/api/v1/users/me'
+    const url3 = 'http://localhost:4003/api/v1/admin/yo'
     const navigation = useNavigate()
 
 

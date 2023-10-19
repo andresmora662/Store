@@ -22,7 +22,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/profile',
-    element: (<PayPalScriptProvider options={{ "client-id": import.meta.env.ID_PAYPAL,
+    element: (<PayPalScriptProvider options={{ "client-id": "ARaxA26vLTPmVJEx8jg0kgo1RBEN_FDSgOqVkANyVDK4pLQXx6Lyw4-p8CpEMVg_dS73AyOk6HtXeATc",
     components: "buttons",
     currency: "USD" }}>
       <UserProvider>

@@ -12,7 +12,7 @@ const Admin = () => {
 
     //--- Obtener productos
     const getProducts = async() =>{
-     const url = "http://localhost:5003/api/v1/products"
+     const url = "http://localhost:4003/api/v1/products"
      const response = await axios.get(url)
      console.log(response)
      setProduct(response.data)
@@ -27,7 +27,7 @@ const Admin = () => {
             image: formProduct.image
         }
 
-       const url = "http://localhost:5003/api/v1/products" 
+       const url = "http://localhost:4003/api/v1/products" 
        const response = await axios.post(url, productData)
        console.log(response)
        getProducts()
@@ -35,7 +35,7 @@ const Admin = () => {
 
     //---Editar productos
     const Editproducts = async(id) =>{
-        const url = `http://localhost:5003/api/v1/products/${id}`;
+        const url = `http://localhost:4003/api/v1/products/${id}`;
 
         const response = await axios.get(url)
         const productEdit = response.data
@@ -60,7 +60,7 @@ const Admin = () => {
     }
 
     const delteProduct = async(id) =>{
-        const url = `http://localhost:5003/api/v1/products/${id}`;
+        const url = `http://localhost:4003/api/v1/products/${id}`;
         const response = await axios.delete(url)
         console.log(response)
         getProducts()

@@ -5,7 +5,7 @@ import axios from 'axios'
 const ChangePassword = () => {
     
  const {userData,setUserData} = useContext(UserContex)
- const url = "http://localhost:5003/api/v1/pass/change"
+ const url = "http://localhost:4003/api/v1/pass/change"
 
  const token = userData.token
  const oldPassword = userData.oldPassword
